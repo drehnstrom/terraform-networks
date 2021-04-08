@@ -1,6 +1,6 @@
 # Create Test Server in Public VPC
 resource "google_compute_instance" "test-server-linux" {
-  name         = "public-test-server-linux-${random_id.instance_id.hex}"
+  name         = "public-server-${random_id.instance_id.hex}"
   machine_type = "f1-micro"
   zone         = var.gcp_zone_1
   tags         = ["allow-ssh"]
@@ -19,7 +19,6 @@ resource "google_compute_instance" "test-server-linux" {
     access_config { } 
   }
 } 
-
 
 output "test-server-linux" {
   value = google_compute_instance.test-server-linux.name
