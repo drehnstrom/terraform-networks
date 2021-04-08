@@ -1,5 +1,5 @@
 # GCP Settings
-project_id    = "spring-forest-309917" 
+#project_id    = "spring-forest-309917" 
 gcp_region_1  = "us-central1"
 gcp_zone_1    = "us-central1-a"
 
